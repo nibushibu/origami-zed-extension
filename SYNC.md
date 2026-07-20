@@ -61,5 +61,12 @@ script runs.
    changed upstream), you'll need to hand-update `zed-entry.mjs` to match.
    This is the one seam where an upstream change could require a manual
    code fix rather than just a data/config regeneration.
+4. If upstream adds/removes/renames a file under `src/server/` or
+   `src/utilities.mjs`, update both `VENDOR_FILES` in
+   `scripts/sync-upstream.mjs` AND `EMBEDDED_FILES` in `src/lib.rs` to match.
+   `src/lib.rs` embeds these files via `include_str!` at compile time (see
+   the doc comment at the top of that file for why), so it has its own list
+   that must be kept in sync by hand — the sync script cannot safely rewrite
+   Rust source.
 4. Bump `version` in both `extension.toml` and `Cargo.toml` (they must match)
    when you cut a new release.
