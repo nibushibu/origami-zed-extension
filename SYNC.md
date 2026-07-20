@@ -42,8 +42,8 @@ script runs.
 | --- | --- |
 | `extension.toml`, `Cargo.toml`, `src/lib.rs` | The Rust/WASM wrapper. Launches `language-server/zed-entry.mjs` as an external process; see doc comments in `src/lib.rs`. |
 | `language-server/zed-entry.mjs` | Composes the vendored modules into a single LSP server process, and reproduces upstream's client-side builtins-completion behavior (which VS Code's client registers separately, but Zed extensions can't). See doc comment at the top of the file for why this exists. |
-| `grammars/origami/**` | Placeholder Tree-sitter grammar (see `grammars/origami/README.md`). VS Code's TextMate grammar (`upstream/syntaxes/*.tmLanguage.json`) has no automatic equivalent in Tree-sitter, so this must be maintained by hand. |
-| `languages/*/highlights.scm`, `indents.scm`, etc. (once added) | Tree-sitter queries; same reasoning as above. |
+| Tree-sitter grammar (separate repo: `nibushibu/tree-sitter-origami`, referenced from `extension.toml`) | Placeholder Tree-sitter grammar. Zed requires grammars to live in their own git repo and clones it into `grammars/` (gitignored) at install time. VS Code's TextMate grammar (`upstream/syntaxes/*.tmLanguage.json`) has no automatic equivalent in Tree-sitter, so this must be maintained by hand. |
+| `languages/*/highlights.scm`, `indents.scm`, etc. (once added) | Tree-sitter queries; same reasoning as above. These DO live in this repo, alongside each `config.toml`. |
 
 ## What to check after every sync
 

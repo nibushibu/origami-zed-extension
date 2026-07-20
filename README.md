@@ -18,7 +18,7 @@ tracks upstream and stays up to date.
 | Diagnostics (syntax errors) | ✅ working |
 | AutoComplete (builtins, paths, local declarations) | ✅ working |
 | Go to Definition | ✅ working |
-| Syntax highlighting | 🚧 placeholder only (comments/strings); see `grammars/origami/README.md` |
+| Syntax highlighting | 🚧 placeholder only (comments/strings); grammar lives in the separate repo `nibushibu/tree-sitter-origami` |
 | `.ori.html` / `.ori.md` template documents | ⚠️ same LSP-only limitation as upstream (upstream doesn't support these for diagnostics/autocomplete/definition either) |
 
 ## Repository layout
@@ -31,7 +31,7 @@ origami-zed-extension/
 │   ├── origami/config.toml             # generated — see SYNC.md
 │   ├── origami-html/config.toml        # generated
 │   └── origami-markdown/config.toml    # generated
-├── grammars/origami/           # placeholder Tree-sitter grammar (hand-written)
+├── grammars/                   # gitignored — Zed clones the grammar repo here
 ├── language-server/
 │   ├── zed-entry.mjs           # hand-written composition layer (see file header)
 │   ├── package.json            # generated — npm runtime deps

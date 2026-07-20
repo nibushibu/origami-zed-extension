@@ -379,8 +379,9 @@ function main() {
   if (lock && lock.grammarSourceHash && lock.grammarSourceHash !== grammarHash) {
     console.log(
       `\nWARNING: upstream's TextMate grammar (syntaxes/*.tmLanguage.json) changed.\n` +
-        `  Zed uses a hand-written Tree-sitter grammar (grammars/origami) and queries\n` +
-        `  (languages/*/highlights.scm etc.), which are NOT auto-derived.\n` +
+        `  Zed uses a hand-written Tree-sitter grammar (separate repo:\n` +
+        `  nibushibu/tree-sitter-origami) and queries (languages/*/highlights.scm etc.),\n` +
+        `  which are NOT auto-derived.\n` +
         `  Please review upstream's syntax changes and update the Tree-sitter grammar/queries by hand.`
     );
   }

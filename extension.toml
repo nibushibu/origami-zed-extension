@@ -7,12 +7,17 @@ description = "Language support for the Origami expression language (Zed port of
 repository = "https://github.com/nibushibu/origami-zed-extension"
 
 [grammars.origami]
-# NOTE: `rev` must always be a commit SHA that has been pushed to GitHub and
-# that contains the grammar as it exists at that commit (grammars/origami/src).
-# Bump this whenever grammars/origami/src changes and you push the result.
-repository = "https://github.com/nibushibu/origami-zed-extension"
-rev = "29ce72726f15a494c7cf8088bb34c54760c3c361"
-path = "grammars/origami"
+# The Tree-sitter grammar lives in its OWN repository. This is how Zed expects
+# grammars to be provided: it clones this repo into <extension>/grammars/origami
+# at install time, so the grammar source must NOT be committed into this
+# extension repo (grammars/ is gitignored here).
+#
+# LOCAL DEV: currently points at a local git repo via a file:// URL. Before
+# publishing, create https://github.com/nibushibu/tree-sitter-origami, push
+# the local repo (/Users/genki/Sites/tree-sitter-origami) there, and switch
+# `repository` to that URL, bumping `rev` to the pushed commit SHA.
+repository = "file:///Users/genki/Sites/tree-sitter-origami"
+rev = "d4e1406e27a70ca1eea665c57726a0b36071e593"
 
 [language_servers.origami-language-server]
 name = "Origami Language Server"
