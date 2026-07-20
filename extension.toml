@@ -7,14 +7,11 @@ description = "Language support for the Origami expression language (Zed port of
 repository = "https://github.com/nibushibu/origami-zed-extension"
 
 [grammars.origami]
-# TODO: `rev` must be a real commit SHA of this repo (the one that
-# introduced/updated grammars/origami/src) once it's pushed to GitHub.
-# For local dev testing before the first push, you can use a `file://` URL
-# instead, e.g.:
-#   repository = "file:///Users/genki/Sites/origami-zed-extension"
-#   rev = "<current HEAD commit of this repo>"
+# NOTE: `rev` must always be a commit SHA that has been pushed to GitHub and
+# that contains the grammar as it exists at that commit (grammars/origami/src).
+# Bump this whenever grammars/origami/src changes and you push the result.
 repository = "https://github.com/nibushibu/origami-zed-extension"
-rev = "TODO"
+rev = "29ce72726f15a494c7cf8088bb34c54760c3c361"
 path = "grammars/origami"
 
 [language_servers.origami-language-server]
