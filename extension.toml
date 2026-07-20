@@ -12,11 +12,9 @@ repository = "https://github.com/nibushibu/origami-zed-extension"
 # at install time, so the grammar source must NOT be committed into this
 # extension repo (grammars/ is gitignored here).
 #
-# LOCAL DEV: currently points at a local git repo via a file:// URL. Before
-# publishing, create https://github.com/nibushibu/tree-sitter-origami, push
-# the local repo (/Users/genki/Sites/tree-sitter-origami) there, and switch
-# `repository` to that URL, bumping `rev` to the pushed commit SHA.
-repository = "file:///Users/genki/Sites/tree-sitter-origami"
+# `rev` must always be a commit SHA that has actually been pushed to that
+# repository. Bump it whenever tree-sitter-origami changes.
+repository = "https://github.com/nibushibu/tree-sitter-origami"
 rev = "d4e1406e27a70ca1eea665c57726a0b36071e593"
 
 [language_servers.origami-language-server]
