@@ -1,0 +1,13 @@
+{
+  "name": "origami-zed-language-server",
+  "private": true,
+  "type": "module",
+  "description": "GENERATED FILE - do not hand-edit. Regenerate with: node scripts/sync-upstream.mjs. Runtime dependencies mirror upstream's src/server dependencies.",
+  "main": "zed-entry.mjs",
+  "dependencies": {
+    "@weborigami/async-tree": "0.6.12",
+    "@weborigami/language": "0.6.12",
+    "vscode-languageserver": "9.0.1",
+    "vscode-languageserver-textdocument": "1.0.12"
+  }
+}

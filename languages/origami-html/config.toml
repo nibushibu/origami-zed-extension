@@ -1,0 +1,21 @@
+# GENERATED FILE - do not hand-edit.
+# Regenerate with: node scripts/sync-upstream.mjs
+# Derived from upstream package.json ("origami-html") + language-configuration.json.
+
+name = "Origami HTML Document"
+grammar = "origami"
+path_suffixes = ["ori.html"]
+line_comments = ["// "]
+autoclose_before = ";:.,=}])>` \n\t"
+brackets = [
+  { start = "{", end = "}", close = true, newline = true },
+  { start = "[", end = "]", close = true, newline = true },
+  { start = "(", end = ")", close = true, newline = false },
+  { start = "<", end = ">", close = true, newline = false },
+  { start = "'", end = "'", close = true, newline = false, not_in = ["string", "comment"] },
+  { start = "\"", end = "\"", close = true, newline = false, not_in = ["string"] },
+  { start = "`", end = "`", close = true, newline = false, not_in = ["string", "comment"] },
+  { start = "${", end = "}", close = false, newline = false },
+]
+block_comment = { start = "/*", end = "*/", prefix = "", tab_size = 2 }
+documentation_comment = { start = "/**", end = "*/", prefix = "* ", tab_size = 1 }

@@ -1,0 +1,597 @@
+[
+  {
+    "label": "Dev:",
+    "kind": 2,
+    "documentation": "Develop and debug Origami projects"
+  },
+  {
+    "label": "Dev.audit",
+    "kind": 2,
+    "documentation": "Identify broken internal links and references"
+  },
+  {
+    "label": "Dev.breakpoint",
+    "kind": 2,
+    "documentation": "Break into the JavaScript debugger, then return arg"
+  },
+  {
+    "label": "Dev.changes",
+    "kind": 2,
+    "documentation": "Return a tree of changes"
+  },
+  {
+    "label": "Dev.clear",
+    "kind": 2,
+    "documentation": "Remove all values from the tree (alias of Tree.clear)"
+  },
+  {
+    "label": "Dev.crawl",
+    "kind": 2,
+    "documentation": "A tree of a site's discoverable resources"
+  },
+  {
+    "label": "Dev.copy",
+    "kind": 2,
+    "documentation": "Copy the source tree to the target"
+  },
+  {
+    "label": "Dev.debug",
+    "kind": 2,
+    "documentation": "Add debug features to the tree"
+  },
+  {
+    "label": "Dev.explore",
+    "kind": 2,
+    "documentation": "Explore the current scope [when run in browser]"
+  },
+  {
+    "label": "Dev.help",
+    "kind": 2,
+    "documentation": "Get help on builtin namespaces and commands"
+  },
+  {
+    "label": "Dev.keys",
+    "kind": 2,
+    "documentation": "The keys of the tree (alias of Tree.keys)"
+  },
+  {
+    "label": "Dev.log",
+    "kind": 2,
+    "documentation": "Log message to the console and return a"
+  },
+  {
+    "label": "Dev.serve",
+    "kind": 2,
+    "documentation": "Start a web server for the tree"
+  },
+  {
+    "label": "Dev.stdin",
+    "kind": 2,
+    "documentation": "Returns the content of the standard input stream"
+  },
+  {
+    "label": "Dev.svg",
+    "kind": 2,
+    "documentation": "Render a tree visually in SVG format"
+  },
+  {
+    "label": "Dev.version",
+    "kind": 2,
+    "documentation": "Return the version number of the Origami language"
+  },
+  {
+    "label": "Dev.watch",
+    "kind": 2,
+    "documentation": "Reevaluate fn when tree changes"
+  },
+  {
+    "label": "Origami:",
+    "kind": 2,
+    "documentation": "Create sites and other digital artifacts"
+  },
+  {
+    "label": "Origami.basename",
+    "kind": 2,
+    "documentation": "Removes an extension from the key if present"
+  },
+  {
+    "label": "Origami.config",
+    "kind": 2,
+    "documentation": "The current project's configuration"
+  },
+  {
+    "label": "Origami.csv",
+    "kind": 2,
+    "documentation": "Render the tree as a CSV file"
+  },
+  {
+    "label": "Origami.document",
+    "kind": 2,
+    "documentation": "Create a document object with the text and data"
+  },
+  {
+    "label": "Origami.extension",
+    "kind": 2,
+    "documentation": "Helpers for working with file extensions"
+  },
+  {
+    "label": "Origami.fetch",
+    "kind": 2,
+    "documentation": "Fetch a resource from a URL with support for extensions"
+  },
+  {
+    "label": "Origami.htmlEscape",
+    "kind": 2,
+    "documentation": "Escape HTML entities in the text"
+  },
+  {
+    "label": "Origami.image",
+    "kind": 2,
+    "documentation": "Collection of functions for working with images"
+  },
+  {
+    "label": "Origami.indexPage",
+    "kind": 2,
+    "documentation": "A default index.html page for the tree"
+  },
+  {
+    "label": "Origami.inline",
+    "kind": 2,
+    "documentation": "Inline Origami expressions found in the text"
+  },
+  {
+    "label": "Origami.json",
+    "kind": 2,
+    "documentation": "Render the object in JSON format"
+  },
+  {
+    "label": "Origami.jsonKeys",
+    "kind": 2,
+    "documentation": "Add .keys.json files to a tree"
+  },
+  {
+    "label": "Origami.jsonParse",
+    "kind": 2,
+    "documentation": "Parse text as JSON"
+  },
+  {
+    "label": "Origami.mdHtml",
+    "kind": 2,
+    "documentation": "Render the markdown as HTML"
+  },
+  {
+    "label": "Origami.mdOutline",
+    "kind": 2,
+    "documentation": "The outline structure of the markdown document"
+  },
+  {
+    "label": "Origami.naturalOrder",
+    "kind": 2,
+    "documentation": "A comparison function for natural sort order"
+  },
+  {
+    "label": "Origami.once",
+    "kind": 2,
+    "documentation": "Run the function only once, return the same result"
+  },
+  {
+    "label": "Origami.ori",
+    "kind": 2,
+    "documentation": "Evaluate the text as an Origami expression"
+  },
+  {
+    "label": "Origami.post",
+    "kind": 2,
+    "documentation": "POST the given data to the URL"
+  },
+  {
+    "label": "Origami.project",
+    "kind": 2,
+    "documentation": "The root folder for the current Origami project"
+  },
+  {
+    "label": "Origami.redirect",
+    "kind": 2,
+    "documentation": "Redirect to the given URL"
+  },
+  {
+    "label": "Origami.repeat",
+    "kind": 2,
+    "documentation": "An array of n copies of the object"
+  },
+  {
+    "label": "Origami.rss",
+    "kind": 2,
+    "documentation": "Transforms a JSON Feed tree to RSS XML"
+  },
+  {
+    "label": "Origami.shell",
+    "kind": 2,
+    "documentation": "Run the text as a shell command, return the output"
+  },
+  {
+    "label": "Origami.sitemap",
+    "kind": 2,
+    "documentation": "Generate a sitemap for the tree"
+  },
+  {
+    "label": "Origami.slash",
+    "kind": 2,
+    "documentation": "Helpers for working with trailing slashes"
+  },
+  {
+    "label": "Origami.slug",
+    "kind": 2,
+    "documentation": "A version of the text suitable for use in URLs"
+  },
+  {
+    "label": "Origami.static",
+    "kind": 2,
+    "documentation": "Define common static files for the tree"
+  },
+  {
+    "label": "Origami.string",
+    "kind": 2,
+    "documentation": "Coerce a buffer or document to a string"
+  },
+  {
+    "label": "Origami.toFunction",
+    "kind": 2,
+    "documentation": "Coerce a tree or packed function definition to a function"
+  },
+  {
+    "label": "Origami.unpack",
+    "kind": 2,
+    "documentation": "Unpack the buffer into a usable form"
+  },
+  {
+    "label": "Origami.yaml",
+    "kind": 2,
+    "documentation": "Render the object in YAML format"
+  },
+  {
+    "label": "Origami.yamlParse",
+    "kind": 2,
+    "documentation": "Parse text as YAML"
+  },
+  {
+    "label": "Protocol:",
+    "kind": 2,
+    "documentation": "Retrieve resources via URL protocols"
+  },
+  {
+    "label": "Protocol.explore",
+    "kind": 2,
+    "documentation": "Treat a website with JSON keys as a tree"
+  },
+  {
+    "label": "Protocol.files",
+    "kind": 2,
+    "documentation": "File system folders and files"
+  },
+  {
+    "label": "Protocol.http",
+    "kind": 2,
+    "documentation": "Web resources via HTTP"
+  },
+  {
+    "label": "Protocol.https",
+    "kind": 2,
+    "documentation": "Web resources via HTTPS"
+  },
+  {
+    "label": "Protocol.httptree",
+    "kind": 2,
+    "documentation": "Website tree via HTTP"
+  },
+  {
+    "label": "Protocol.httpstree",
+    "kind": 2,
+    "documentation": "Website tree via HTTPS"
+  },
+  {
+    "label": "Protocol.node",
+    "kind": 2,
+    "documentation": "Installed Node.js modules"
+  },
+  {
+    "label": "Protocol.package",
+    "kind": 2,
+    "documentation": "Packages installed in node_modules"
+  },
+  {
+    "label": "Tree:",
+    "kind": 2,
+    "documentation": "Work with trees of files and data"
+  },
+  {
+    "label": "Tree.addNextPrevious",
+    "kind": 2,
+    "documentation": "Add next/previous fields to the map's values"
+  },
+  {
+    "label": "Tree.assign",
+    "kind": 2,
+    "documentation": "Apply key/values from source to target"
+  },
+  {
+    "label": "Tree.cache",
+    "kind": 2,
+    "documentation": "Caches values from the tree"
+  },
+  {
+    "label": "Tree.calendar",
+    "kind": 2,
+    "documentation": "Return a tree structure for years/months/days"
+  },
+  {
+    "label": "Tree.child",
+    "kind": 2,
+    "documentation": "Returns the indicated child node, creating it if necessary"
+  },
+  {
+    "label": "Tree.clear",
+    "kind": 2,
+    "documentation": "Remove all values from the map"
+  },
+  {
+    "label": "Tree.constant",
+    "kind": 2,
+    "documentation": "Return a deep tree with a single constant value"
+  },
+  {
+    "label": "Tree.deepMap",
+    "kind": 2,
+    "documentation": "Map the keys and values of a deep tree"
+  },
+  {
+    "label": "Tree.deepMerge",
+    "kind": 2,
+    "documentation": "Return a deeply-merged tree"
+  },
+  {
+    "label": "Tree.deepReverse",
+    "kind": 2,
+    "documentation": "Reverse order of keys at all levels of the tree"
+  },
+  {
+    "label": "Tree.deepTake",
+    "kind": 2,
+    "documentation": "The first n values from the deep tree"
+  },
+  {
+    "label": "Tree.deepText",
+    "kind": 2,
+    "documentation": "The text values of the deep tree"
+  },
+  {
+    "label": "Tree.deepValues",
+    "kind": 2,
+    "documentation": "The in-order leaf values of the tree"
+  },
+  {
+    "label": "Tree.delete",
+    "kind": 2,
+    "documentation": "Delete the value for the key from map"
+  },
+  {
+    "label": "Tree.entries",
+    "kind": 2,
+    "documentation": "The map's [key, value] pairs"
+  },
+  {
+    "label": "Tree.filter",
+    "kind": 2,
+    "documentation": "Filter a tree by a condition"
+  },
+  {
+    "label": "Tree.first",
+    "kind": 2,
+    "documentation": "The first value in the map"
+  },
+  {
+    "label": "Tree.forEach",
+    "kind": 2,
+    "documentation": "Apply fn to each (value, key)"
+  },
+  {
+    "label": "Tree.from",
+    "kind": 2,
+    "documentation": "Create a map from an object"
+  },
+  {
+    "label": "Tree.globKeys",
+    "kind": 2,
+    "documentation": "A tree whose keys can include glob wildcard patterns"
+  },
+  {
+    "label": "Tree.groupBy",
+    "kind": 2,
+    "documentation": "A new map with values grouped by the function"
+  },
+  {
+    "label": "Tree.has",
+    "kind": 2,
+    "documentation": "True if key exists in map"
+  },
+  {
+    "label": "Tree.indent",
+    "kind": 2,
+    "documentation": "Tagged template literal for normalizing indentation"
+  },
+  {
+    "label": "Tree.inners",
+    "kind": 2,
+    "documentation": "The tree's interior nodes"
+  },
+  {
+    "label": "Tree.invokeFunctions",
+    "kind": 2,
+    "documentation": "Getting a map value invokes it if it's a function"
+  },
+  {
+    "label": "Tree.isMap",
+    "kind": 2,
+    "documentation": "True if object is a map"
+  },
+  {
+    "label": "Tree.isMaplike",
+    "kind": 2,
+    "documentation": "True if object can be coerced to a tree"
+  },
+  {
+    "label": "Tree.isReadOnlyMap",
+    "kind": 2,
+    "documentation": "True if object is a read-only map"
+  },
+  {
+    "label": "Tree.isTraversable",
+    "kind": 2,
+    "documentation": "True if object is traversable"
+  },
+  {
+    "label": "Tree.json",
+    "kind": 2,
+    "documentation": "Render the tree in JSON format"
+  },
+  {
+    "label": "Tree.keys",
+    "kind": 2,
+    "documentation": "The keys of the map"
+  },
+  {
+    "label": "Tree.map",
+    "kind": 2,
+    "documentation": "Create a new map by transforming keys and/or values"
+  },
+  {
+    "label": "Tree.mapExtension",
+    "kind": 2,
+    "documentation": "Create a new map by transforming extensions"
+  },
+  {
+    "label": "Tree.mapReduce",
+    "kind": 2,
+    "documentation": "Map the keys and/or values in a tree and reduce them"
+  },
+  {
+    "label": "Tree.mask",
+    "kind": 2,
+    "documentation": "Return the source tree with only the keys in the mask"
+  },
+  {
+    "label": "Tree.match",
+    "kind": 2,
+    "documentation": "Matches simple patterns or regular expressions"
+  },
+  {
+    "label": "Tree.merge",
+    "kind": 2,
+    "documentation": "Return a new tree merging the given maps"
+  },
+  {
+    "label": "Tree.paginate",
+    "kind": 2,
+    "documentation": "Group the map's values into fixed-size sets"
+  },
+  {
+    "label": "Tree.parent",
+    "kind": 2,
+    "documentation": "The parent of the given tree node"
+  },
+  {
+    "label": "Tree.paths",
+    "kind": 2,
+    "documentation": "Slash-separated paths for the tree's values"
+  },
+  {
+    "label": "Tree.plain",
+    "kind": 2,
+    "documentation": "Render the tree as a plain JavaScript object"
+  },
+  {
+    "label": "Tree.reduce",
+    "kind": 2,
+    "documentation": "Reduce the tree to a single value"
+  },
+  {
+    "label": "Tree.regExpKeys",
+    "kind": 2,
+    "documentation": "A tree whose keys are regular expression strings"
+  },
+  {
+    "label": "Tree.reverse",
+    "kind": 2,
+    "documentation": "Reverse the order of the map's keys"
+  },
+  {
+    "label": "Tree.root",
+    "kind": 2,
+    "documentation": "The root node of the given tree"
+  },
+  {
+    "label": "Tree.scope",
+    "kind": 2,
+    "documentation": "A merged view of the tree and its ancestors"
+  },
+  {
+    "label": "Tree.set",
+    "kind": 2,
+    "documentation": "Set the value for the key in the map"
+  },
+  {
+    "label": "Tree.shuffle",
+    "kind": 2,
+    "documentation": "Shuffle the keys of the map"
+  },
+  {
+    "label": "Tree.size",
+    "kind": 2,
+    "documentation": "The map's size (number of keys)"
+  },
+  {
+    "label": "Tree.sort",
+    "kind": 2,
+    "documentation": "A new map with its keys sorted"
+  },
+  {
+    "label": "Tree.sync",
+    "kind": 2,
+    "documentation": "Awaits all asynchronous values in the tree"
+  },
+  {
+    "label": "Tree.take",
+    "kind": 2,
+    "documentation": "The first n values in the map"
+  },
+  {
+    "label": "Tree.text",
+    "kind": 2,
+    "documentation": "Tagged template literal for rendering trees"
+  },
+  {
+    "label": "Tree.traverse",
+    "kind": 2,
+    "documentation": "Return the value at the path of keys"
+  },
+  {
+    "label": "Tree.traverseOrThrow",
+    "kind": 2,
+    "documentation": "Return the value at the path of keys or throw"
+  },
+  {
+    "label": "Tree.traversePath",
+    "kind": 2,
+    "documentation": "Traverse a slash-separated path"
+  },
+  {
+    "label": "Tree.values",
+    "kind": 2,
+    "documentation": "The map's values"
+  },
+  {
+    "label": "Tree.withKeys",
+    "kind": 2,
+    "documentation": "Use the given keys for the map"
+  }
+]
